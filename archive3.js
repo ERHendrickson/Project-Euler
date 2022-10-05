@@ -7,7 +7,7 @@
 function LPF(){
     let newArray = []
     let num = 600851475143
-    //any factor less than the square froot of the number we check, will have corresponding factor larger than the square root of the number. so we only need to check up to the square root of the number, and then we can deduct the remaining factors
+    //any factor less than the square root of the number we check, will have corresponding factor larger than the square root of the number. so we only need to check up to the square root of the number, and then we can deduct the remaining factors
     for (let i = 1; i * i < num; i+=2) {
         //1. create a list of all odd factors of the given number and push to array
         if(num % i == 0){
